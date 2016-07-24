@@ -12,8 +12,8 @@
 
  Node.js 在调用某个包时,会首先检查包中package.json文件的 main 字段,将其作为包的接口模块,如果package.json或main 字段不存在,会尝试寻找 index.js或index.node作为包的接口。
 
- ###（三）本地模式和全局模式
- #### 1.本地模式
+###（三）本地模式和全局模式
+#### 1.本地模式
  在使用 npm 安装包的时候,有两种模式:本地模式和全局模式。<br/><br/>
  默认情况下我们使用 npm [install/i] [package_name]命令就是采用本地模式,即把包安装到当前目录的 node_modules 子目录下。<br/><br/>
  Node.js 的require在加载模块时会尝试搜寻 node_modules子目录,因此使用npm本地模式安装的包可以直接被引用。
